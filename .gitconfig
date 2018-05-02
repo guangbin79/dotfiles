@@ -1,0 +1,7 @@
+[core]
+	editor = vi
+[merge]
+	tool = vimdiff
+[mergetool]
+	prompt = false
+	keepBackup = false
