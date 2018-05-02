@@ -1,0 +1,81 @@
+{
+  "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-openagent/dev/assets/oh-my-opencode.schema.json",
+  "team_mode": {
+    "enabled": true,
+    "tmux_visualization": false,
+    "max_parallel_members": 4,
+    "max_members": 8,
+    "max_messages_per_run": 10000,
+    "max_wall_clock_minutes": 120,
+    "max_member_turns": 500,
+    "message_payload_max_bytes": 32768,
+    "recipient_unread_max_bytes": 262144,
+    "mailbox_poll_interval_ms": 3000
+  },
+  "git_master": {
+    "commit_footer": true,
+    "include_co_authored_by": true,
+    "git_env_prefix": "GIT_MASTER=1"
+  },
+  "agents": {
+    "sisyphus": {
+      "model": "zai-coding-plan/glm-5.1"
+    },
+    "sisyphus-junior": {
+      "model": "deepseek/deepseek-v4-pro"
+    },
+    "prometheus": {
+      "model": "zai-coding-plan/glm-5.1"
+    },
+    "atlas": {
+      "model": "deepseek/deepseek-v4-pro"
+    },
+    "momus": {
+      "model": "kimi-for-coding/k2p6"
+    },
+    "metis": {
+      "model": "zai-coding-plan/glm-5.1"
+    },
+    "oracle": {
+      "model": "zai-coding-plan/glm-5.1"
+    },
+    "librarian": {
+      "model": "kimi-for-coding/k2p6"
+    },
+    "explore": {
+      "model": "deepseek/deepseek-v4-flash"
+    },
+    "multimodal-looker": {
+      "model": "kimi-for-coding/k2p6"
+    }
+  },
+  "categories": {
+    "visual-engineering": {
+      "model": "zai-coding-plan/glm-5.1"
+    },
+    "ultrabrain": {
+      "model": "zai-coding-plan/glm-5.1"
+    },
+    "deep": {
+      "model": "deepseek/deepseek-v4-pro"
+    },
+    "artistry": {
+      "model": "zai-coding-plan/glm-5.1"
+    },
+    "quick": {
+      "model": "deepseek/deepseek-v4-flash"
+    },
+    "unspecified-low": {
+      "model": "deepseek/deepseek-v4-pro"
+    },
+    "unspecified-high": {
+      "model": "zai-coding-plan/glm-5.1"
+    },
+    "writing": {
+      "model": "kimi-for-coding/k2p6"
+    },
+    "git": {
+      "model": "deepseek/deepseek-v4-flash"
+    }
+  }
+}
