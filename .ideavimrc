@@ -1,0 +1,63 @@
+" plugin
+"  安装nerdtree、surround插件
+Plug 'preservim/nerdtree'
+Plug 'tpope/vim-surround'
+
+" setting
+set hlsearch "高亮搜索
+set incsearch "递增搜索
+set ignorecase "小写忽略大小写搜索
+set smartcase "大写指定大写搜索
+set showmode "显示当前模式
+set number "显示行号
+set relativenumber "显示相对行号
+set scrolloff=3 "光标移动保留3行
+set history=100000 "命令历史条目数
+set clipboard=unnamed,unnamedplus "vim支持系统剪切板
+set clipboard+=ideaput "ide插入支持系统剪切板
+set easymotion "支持easymotion
+
+" key
+"  leader改为空格键
+let mapleader="\<space>"
+"  插入模式下使用jj模拟取消按键
+inoremap jj <esc>
+"  任何模式下使用ctrl+l模拟取消按键，并清除搜索高亮
+inoremap <c-l> <esc>:nohlsearch<cr>
+vnoremap <c-l> <esc>:nohlsearch<cr>
+lnoremap <c-l> <esc>:nohlsearch<cr>
+cnoremap <c-l> <esc>:nohlsearch<cr>
+nnoremap <c-l> <esc>:nohlsearch<cr>
+"  大写P只粘贴不剪切
+vnoremap P "0p
+
+" easymotion
+"  取消easymotion的默认按键
+let g:EasyMotion_do_mapping=0
+"  普通模式下，easymotion设定gc跳转单字符
+nmap gc <plug>(easymotion-s)
+
+" nerdtree
+"  普通模式下，leader+n 打开关闭文件列表
+nmap <silent> <leader>n :NERDTreeToggle<cr>
+"  普通模式下，leader+N 打开文件列表同时定位文件位置
+nmap <silent> <leader>N :NERDTreeFind<cr>
+
+" action, :actionlist 可以查看action列表
+nmap mm <action>(ToggleBookmark)
+nmap mn <action>(GotoNextBookmark)
+nmap mp <action>(GotoPreviousBookmark)
+nmap gd <action>(GotoDeclaration)
+nmap gi <action>(GotoImplementation)
+nmap gr <action>(FindUsages)
+nmap gj <action>(GotoNextError)
+nmap gk <action>(GotoPreviousError)
+nmap <a-j> <action>(PreviousTab)
+nmap <a-k> <action>(NextTab)
+nmap <a-m> <action>(HideAllWindows)
+
+nmap <leader>m <action>(ShowBookmarks)
+nmap <leader>/ <action>(FindInPath)
+nmap <leader>f <action>(GotoFile)
+nmap <leader>b <action>(Build)
+nmap <leader>r <action>(Run)

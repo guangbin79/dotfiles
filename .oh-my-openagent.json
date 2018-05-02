@@ -1,0 +1,118 @@
+{
+  "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-openagent/dev/assets/oh-my-opencode.schema.json",
+  "agents": {
+    "sisyphus": {
+      "model": "kimi-for-coding/k2p6",
+      "skills": [
+        "brainstorming",
+        "writing-plans",
+        "dispatching-parallel-agents",
+        "subagent-driven-development",
+        "using-superpowers",
+        "verification-before-completion",
+        "playwright",
+        "dev-browser"
+      ]
+    },
+    "sisyphus-junior": {
+      "model": "zai-coding-plan/glm-5.1",
+      "skills": [
+        "test-driven-development",
+        "systematic-debugging",
+        "executing-plans",
+        "verification-before-completion"
+      ]
+    },
+    "atlas": {
+      "model": "zai-coding-plan/glm-5.1",
+      "skills": [
+        "test-driven-development",
+        "systematic-debugging",
+        "executing-plans",
+        "subagent-driven-development",
+        "dispatching-parallel-agents",
+        "using-git-worktrees",
+        "finishing-a-development-branch",
+        "verification-before-completion",
+        "git-master"
+      ]
+    },
+    "oracle": {
+      "model": "zai-coding-plan/glm-5.1",
+      "skills": [
+        "brainstorming",
+        "systematic-debugging",
+        "verification-before-completion",
+        "playwright",
+        "review-work"
+      ]
+    },
+    "prometheus": {
+      "model": "zai-coding-plan/glm-5.1",
+      "skills": [
+        "brainstorming",
+        "writing-plans",
+        "using-superpowers"
+      ]
+    },
+    "metis": {
+      "model": "zai-coding-plan/glm-5.1",
+      "skills": [
+        "requesting-code-review",
+        "verification-before-completion",
+        "review-work",
+        "ai-slop-remover"
+      ]
+    },
+    "momus": {
+      "model": "kimi-for-coding/k2p6",
+      "skills": [
+        "verification-before-completion",
+        "ai-slop-remover"
+      ]
+    },
+    "librarian": {
+      "model": "kimi-for-coding/k2p6",
+      "skills": [
+        "using-superpowers"
+      ]
+    },
+    "explore": {
+      "model": "zai-coding-plan/glm-5.1",
+      "skills": [
+        "brainstorming",
+        "playwright",
+        "dev-browser"
+      ]
+    },
+    "multimodal-looker": {
+      "model": "kimi-for-coding/k2p5",
+      "skills": [
+        "frontend-ui-ux"
+      ]
+    }
+  },
+  "categories": {
+    "visual-engineering": {
+      "model": "kimi-for-coding/k2p5"
+    },
+    "ultrabrain": {
+      "model": "zai-coding-plan/glm-5.1"
+    },
+    "deep": {
+      "model": "kimi-for-coding/kimi-k2-thinking"
+    },
+    "quick": {
+      "model": "kimi-for-coding/k2p6"
+    },
+    "unspecified-low": {
+      "model": "kimi-for-coding/k2p6"
+    },
+    "unspecified-high": {
+      "model": "zai-coding-plan/glm-5.1"
+    },
+    "writing": {
+      "model": "kimi-for-coding/k2p6"
+    }
+  }
+}
