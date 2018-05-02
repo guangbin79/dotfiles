@@ -1,0 +1,17 @@
+[core]
+	editor = vi
+[merge]
+	tool = vimdiff
+[mergetool]
+	prompt = false
+	keepBackup = false
+[user]
+	email = guangbin79@gmail.com
+	name = guangbin
+[color]
+	ui = auto
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
